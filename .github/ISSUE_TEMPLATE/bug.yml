@@ -1,0 +1,51 @@
+name: Bug
+description: Something is broken or behaves unexpectedly
+type: Bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is wrong, in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happens
+      description: Error message, log excerpt or observed behaviour.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - int
+        - prod
+        - int and prod
+        - local
+    validations:
+      required: true
+  - type: textarea
+    id: occurrence
+    attributes:
+      label: When and where
+      description: Time window, affected function, page or device, and how to reproduce it if known.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Lost data, affected users or sites.
+  - type: textarea
+    id: cause
+    attributes:
+      label: Cause
+      description: Only if known. Keep guesses out of the fields above.
