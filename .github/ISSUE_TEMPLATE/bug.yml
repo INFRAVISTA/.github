@@ -1,6 +1,7 @@
 name: Bug
 description: Something is broken or behaves unexpectedly
 type: Bug
+projects: ["INFRAVISTA/1"]
 body:
   - type: textarea
     id: summary

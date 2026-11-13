@@ -1,6 +1,7 @@
 name: Feature
 description: New behaviour or a change to existing behaviour
 type: Feature
+projects: ["INFRAVISTA/1"]
 body:
   - type: textarea
     id: goal

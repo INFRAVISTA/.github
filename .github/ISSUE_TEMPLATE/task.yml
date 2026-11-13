@@ -1,6 +1,7 @@
 name: Task
 description: Maintenance, infrastructure, migrations or cleanup
 type: Task
+projects: ["INFRAVISTA/1"]
 body:
   - type: textarea
     id: what
